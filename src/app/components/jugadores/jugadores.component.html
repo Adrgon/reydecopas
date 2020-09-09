@@ -1,0 +1,7 @@
+<h1>Jugadores <small>Independiente </small></h1>
+<hr>
+
+<div class="card-columns">
+<!-- *ngFor="let jugador of jugadores; let i = index" -->
+  <app-jugador-tarjeta (jugadorSeleccionado)="verJugador( $event )" [jugador]="foo" [index]="i"  *ngFor="let foo of jugadores; let i = index"></app-jugador-tarjeta>
+</div>
